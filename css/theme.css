@@ -1,0 +1,242 @@
+body {
+/*   font-family: Georgia, Utopia, 'Liberation Serif', serif;
+   background-color: #1A1D2B;
+   color: #aaa;
+ text-decoration: none;
+   word-spacing: normal;
+*/
+/*   letter-spacing: 0;
+   line-height: 1em;*/
+   font-size: 100%;
+   margin: 0px;
+   padding: 0;
+}
+.contain {
+    position: relative;
+}
+.center {
+position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+@font-face {
+  font-family: "myfont1";
+  src: url("Fonts/almateen.ttf"); format("truetype");
+}
+.mateen {
+    font-family: "myfont1";
+    font-size: 1.4em;
+}
+.figcap {
+     font-size: 0.7em;
+}
+@font-face {
+  font-family: "myfont2";
+  src: url("Fonts/almothnna_bold.ttf"); format("truetype");
+}
+.mothanna {
+   font-family: "myfont2";
+   font-size: 1.4em;
+}​
+img.op {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.navy {
+color: #280099;
+}
+.blue {
+color: #0000ff;
+}
+.red {
+color: #800000;
+}
+.green {
+color: #004a4a;
+}
+p {
+	TEXT-JUSTIFY: kashida;
+	 TEXT-INDENT: 28.3pt; 
+	 TEXT-ALIGN: justify; 
+	 TEXT-KASHIDA: 0% ;
+	 align: justify;
+   FONT-FAMILY: Simplified Arabic;
+  line-height: 2em;
+	 }
+b {
+  font-style: italic;
+  font-weight: bold;
+  background: none repeat scroll 0 0 #F6F6F6;
+}
+.box {
+  border: 1.00pt solid #800000;
+  padding: 1.0em 1.5em;
+}
+ .bu2 {
+  height:3em;
+  width: 100%; 
+  border-radius: 10px;                      
+  font-weight: bold;
+  } 
+#one,#rtldir {
+  text-align: right;
+   direction: rtl;
+}
+#two,#ltrdir {
+  text-align: left;
+   direction: ltr;
+}
+div#twocent {
+  text-align: center;
+   direction: ltr;
+  font-size: 1em;
+  font-style: normal;
+  display: block;
+}
+h1 {
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
+   font-weight: bold;
+   color: #A988;
+   font-size: 1.5em;
+   line-height: 1em;
+   text-align: center; 
+}
+
+h2 {
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
+   font-weight: normal;
+   text-align: center;  
+   font-size: 1.2em;
+   line-height: 1em;
+   padding-bottom: 1em;
+}
+
+h3 {
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1em;
+}
+
+h4 {
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
+   font-weight: normal;
+   text-align: center;
+   font-size: 0.8em;
+   line-height: 1.2em;
+}
+.ui-page { -webkit-backface-visibility: hidden; }
+.mikimg {
+  text-align: center;
+  max-width: 100% !important;
+}
+.mikimg img {
+/*border: 2px solid #FFF;
+box-shadow: 0 0 2px #999999;*/
+max-width: 100% !important;
+height: auto;
+}
+.imp {
+  background-color: #CCFF99;
+  border-bottom: 2px solid #00DD00;
+  border-top: 2px solid #00DD00;
+  color: #003300;
+  margin: 5px 0;
+  padding : 2px 5px;
+}
+.miklist li {
+border-bottom: 1px solid #FFF;
+list-style: square inside none;
+padding: 3px 0;
+margin: 0;
+}
+
+.imp > h3 ,.imp> h2{
+  text-align: center;
+}
+.anchordiv{
+padding:10px;
+background-color: #666666;
+color:#FFFFFF;
+float:right;
+clear:both;
+font-weight:bold;
+margin:5px;
+border: 2px solid #FFFFFF;
+box-shadow: 1px 1px 7px #000000;
+}
+.anchordiv:hover{
+background-color: #999999;
+color:#000000;-
+font-weight:bold;
+}
+.anchordiv a{
+color:white;
+}
+.que{
+  background: none repeat scroll 0 0 #F6F6F6;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 0 0 8px #DDDDDD;
+  color: #FF0000;
+  padding: 10px;
+  font-weight:bold;
+
+}
+.ans{
+padding:0;
+}
+.anst,.ansf{
+  background: none repeat scroll 0 0 #EEFBC9;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 4px #DDDDDD;
+  list-style: lower-alpha inside none;
+  /*margin: 5px 20px;*/
+  padding: 15px;
+  font-style: italic;
+   line-height: 2em;
+}
+.anst:hover{
+ background: none repeat scroll 0 0 #33CC00;
+  color:#FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .ansf:hover{
+ background: none repeat scroll 0 0 #FF3300;
+  color:#FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+   }
+   .miktable tr:nth-child(even) {background-color: lavender}
+.miktable tr:nth-child(odd) {background: #FFF}
+.miktable {
+    border-collapse: collapse;
+    white-space: nowrap; 
+    text-align: center;
+    
+}
+.miktable td {
+    text-align: center;
+    border: 1px solid dodgerblue;
+    font-family: arial;
+    padding: 2px;
+    width: 170;
+}
+
+.miktable th {
+    background: none repeat scroll 0 0 dodgerblue;
+    border-left: 1px solid dodgerblue;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+    color: white;
+    font-family: Verdana;
+    font-variant: small-caps;
+    font-weight: normal;
+    padding: 5px;
+}  

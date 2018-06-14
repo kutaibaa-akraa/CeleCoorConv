@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+مصطلحات و تعاريف           </title> 
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	
+</head> 	
+
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="two" data-theme="e">
+
+<div data-role="header" data-theme="e" data-position="fixed">
+<h1>مصطلحات و تعاريف</h1>
+<a href="about.html#two" data-icon="refresh" rel="external">English</a>
+	<!--a href="#listpanel" data-icon="bars" rel="external"> المواضيع</a>-->
+
+</div><!-- /header -->
+	<div data-role="content">
+  <div data-role="collapsible">
+<H3>Equatorial coordinate system</H3>
+
+  <div class="ui-body ui-body-e" >
+<P>
+The <b>equatorial coordinate system</b> is a celestial coordinate system widely used to specify the positions of celestial objects. It may be implemented in spherical or rectangular coordinates, both defined by an origin at the <b>centre of Earth</b>, a fundamental plane consisting of the projection of Earth's equator onto the celestial sphere (forming the <b>celestial equator</b>), a primary direction towards the vernal equinox, and a <b>right-handed convention</b>.
+</p>
+
+ <div class="mikimg"><img src="300px-Ra_and_dec_rectangular.png" class="mikimg" width="100%"><b><font face="Times New Roman" size="1em"> </font></b></div>
+<p>
+The equatorial coordinate system using spherical coordinates. The fundamental plane is formed by projection of Earth's equator onto the celestial sphere, forming the celestial equator (blue). The primary direction is established by projecting Earth's orbit onto the celestial sphere, forming the ecliptic (red), and setting up the ascending node of the ecliptic on the celestial equator, forming the <b>vernal equinox</b>. </p>
+
+ <div class="mikimg"><img src="equatorial-system.png" class="mikimg" width="100%"><b><font face="Times New Roman" size="1em"> </font></b></div>
+
+<p>
+Right ascension is measured eastward along the celestial equator from the equinox, and declination is measured positive northward from the celestial equator. (Two such coordinate pairs are shown here.) Projections of the Earth's north and south geographic poles form the north and south celestial poles, respectively.
+</p>
+ <div class="mikimg"><img src="celestial-equator.png" class="mikimg" width="100%"><b><font face="Times New Roman" size="1em"> </font></b></div>
+<h4>Declination</h4>
+<p>
+The declination symbol δ, (lower case "delta", abbreviated dec) measures the angular distance of an object perpendicular to the celestial equator, positive to the north, negative to the south. For example, the north celestial pole has a declination of +90°. The origin for declination is the celestial equator, which is the projection of the Earth's equator onto the celestial sphere. Declination is analogous to terrestrial latitude.
+</p>
+
+<h4>Right ascension	</h4>
+<p>
+The right ascension symbol α, (lower case "alpha", abbreviated RA) measures the angular distance of an object eastward along the celestial equator from the vernal equinox to the hour circle passing through the object. The vernal equinox point is one of the two where the ecliptic intersects the celestial equator. Analogous to terrestrial longitude, right ascension is usually measured in sidereal hours, minutes and seconds instead of degrees, a result of the method of measuring right ascensions by timing the passage of objects across the meridian as the Earth rotates. There are (360° / 24h) = 15° in one hour of right ascension, 24h of right ascension around the entire celestial equator.
+
+When used together, right ascension and declination are usually abbreviated RA/Dec.
+</p>
+
+<h4>Hour angle</h4>
+<p>
+Main article: Hour angle
+Alternatively to right ascension, hour angle (abbreviated HA or LHA, local hour angle), a left-handed system, measures the angular distance of an object westward along the celestial equator from the observer's meridian to the hour circle passing through the object. Unlike right ascension, hour angle is always increasing with the rotation of Earth. Hour angle may be considered a means of measuring the time since upper culmination, the moment when an object contacts the meridian overhead.
+</P>
+</div>
+</div><!-- /ui-body -->
+
+  <div data-role="collapsible">
+<H3>Ecliptic coordinate system</H3>
+
+  <div class="ui-body ui-body-e" >
+
+<p>
+The ecliptic coordinate system is a celestial coordinate system commonly used for representing the apparent positions and orbits of Solar System objects. Because most planets (except Mercury) and many small Solar System bodies have orbits with slight inclinations to the ecliptic, using it as the fundamental plane is convenient. The system's origin can be the center of either the Sun or Earth, its primary direction is towards the vernal (northward) equinox, and it has a right-hand convention. It may be implemented in spherical or rectangular coordinates.
+</p>
+
+ <div class="mikimg"><img src="220px-Ecliptic_vs_equator_small.gif" class="mikimg" width="100%"><b><font face="Times New Roman" size="1em"> The apparent motion of the Sun along the ecliptic (red) as seen on the inside of the celestial sphere. Ecliptic coordinates appear in (red). The celestial equator (blue) and the equatorial coordinates (blue), being inclined to the ecliptic, appear to wobble as the Sun advances. </font></b></div>
+<p>
+The celestial equator and the ecliptic are slowly moving due to perturbing forces on the Earth, therefore the orientation of the primary direction, their intersection at the Northern Hemisphere vernal equinox, is not quite fixed. A slow motion of Earth's axis, precession, causes a slow, continuous turning of the coordinate system westward about the poles of the ecliptic, completing one circuit in about 26,000 years. Superimposed on this is a smaller motion of the ecliptic, and a small oscillation of the Earth's axis, nutation.
+</p>
+<p>
+In order to reference a coordinate system which can be considered as fixed in space, these motions require specification of the equinox of a particular date, known as an epoch, when giving a position in ecliptic coordinates. The three most commonly used are:
+
+<b>Mean equinox</b> of a standard epoch
+(usually the J2000.0 epoch, but may include B1950.0, B1900.0, etc.) is a fixed standard direction, allowing positions established at various dates to be compared directly.
+Mean equinox of date
+is the intersection of the ecliptic of "date" (that is, the ecliptic in its position at "date") with the mean equator (that is, the equator rotated by precession to its position at "date", but free from the small periodic oscillations of nutation). Commonly used in planetary orbit calculation.
+<b>True equinox of date</b>
+is the intersection of the ecliptic of "date" with the true equator (that is, the mean equator plus nutation). This is the actual intersection of the two planes at any particular moment, with all motions accounted for.
+A position in the ecliptic coordinate system is thus typically specified true equinox and ecliptic of date, mean equinox and ecliptic of J2000.0, or similar. Note that there is no "mean ecliptic", as the ecliptic is not subject to small periodic oscillations.
+</p>
+<h4>Ecliptic longitude</h4>
+<p>
+Ecliptic longitude or celestial longitude (symbols: heliocentric l , geocentric λ ) measures the angular distance of an object along the ecliptic from the primary direction. Like right ascension in the equatorial coordinate system, the primary direction (0° ecliptic longitude) points from the Earth towards the Sun at the vernal equinox of the Northern Hemisphere. Because it is a right-handed system, ecliptic longitude is measured positive eastwards in the fundamental plane (the ecliptic) from 0° to 360°. Because of axial precession, the ecliptic longitude of most "fixed stars" (referred to the equinox of date) increases by about 50.3 arcseconds per year, or 83.8 arcminutes per century, the speed of general precession.[6][7] However, for stars near the ecliptic poles, the rate of change of ecliptic longitude is dominated by the slight movement of the ecliptic (that is, of the plane of the earth's orbit), so the rate of change may be anything from minus infinity to plus infinity depending on the exact position of the star.
+</p>
+<h4>Ecliptic latitude</h4>
+<p>
+Ecliptic latitude or celestial latitude (symbols: heliocentric b , geocentric β ), measures the angular distance of an object from the ecliptic towards the north (positive) or south (negative) ecliptic pole. For example, the north ecliptic pole has a celestial latitude of +90°. Ecliptic latitude for "fixed stars" is not affected by precession.
+Distance
+Distance is also necessary for a complete spherical position (symbols: heliocentric r , geocentric Δ ). Different distance units are used for different objects. Within the Solar System, astronomical units are used, and for objects near the Earth, Earth radii or kilometers are used.
+</p>
+</div>
+</div><!-- /ui-body -->
+
+  <div data-role="collapsible">
+<H3>Galactic coordinate system</H3>
+
+  <div class="ui-body ui-body-e" >
+
+<p>
+The galactic coordinate system is a celestial coordinate system in spherical coordinates, with the Sun as its center, the primary direction aligned with the approximate center of the Milky Way galaxy, and the fundamental plane parallel to an approximation of the galactic plane but offset to its north. It uses the right-handed convention, meaning that coordinates are positive toward the north and toward the east in the fundamental plane.
+</p>
+ <div class="mikimg"><img src="220px-Galactic_coordinates.JPG" class="mikimg" width="100%"><b><font face="Times New Roman" size="1em"> The galactic coordinates use the Sun as the origin. Galactic longitude (l) is measured with primary direction from the Sun to the center of the galaxy in the galactic plane, while the galactic latitude (b) measures the angle of the object above the galactic plane.
+</font></b></div>
+
+
+<h4>Galactic longitude	</h4>
+<p>
+Longitude (symbol l) measures the angular distance of an object eastward along the galactic equator from the galactic center. Analogous to terrestrial longitude, galactic longitude is usually measured in degrees (°).
+</p>
+<h4>Galactic latitude</h4>
+<p>
+Latitude (symbol b) measures the angle of an object north or south of the galactic equator (or midplane) as viewed from Earth; positive to the north, negative to the south. For example, the north galactic pole has a latitude of +90°. Analogous to terrestrial latitude, galactic latitude is usually measured in degrees (°).
+</p>
+
+<div style="overflow-x:auto;">
+<table class="miktable">
+<caption><b>Equatorial coordinates J2000.0 of galactic reference points</b></caption>
+<tr>
+<td></td>
+<td>
+ 	right ascension
+</td>
+<td>
+declination	
+</td>
+<td>
+constellation
+</td>
+</tr><tr>
+<td>
+north pole (+90° latitude)	
+</td>
+<td>
+12h 51.4m
+</td>
+<td>	+27.13°	
+</td>
+<td>
+Coma Berenices (near 31 Com)
+</td></tr>
+<tr>
+<td>
+south pole (−90° latitude)	
+</td>
+<td>
+0h 51.4m
+</td>
+<td>
+	−27.13°	
+</td>
+<td>
+Sculptor (near NGC 288)
+</td></tr>
+<tr>
+<td>
+galactic center (0° longitude)
+</td>
+<td>	17h 45.6m	
+</td>
+<td>−28.94°	
+</td>
+<td>
+Sagittarius
+(Galactic Center)
+</td></tr>
+<tr>
+<td>
+anti-center (180° longitude)
+</td>
+<td>	
+5h 45.6m	
+</td>
+<td>+28.94°	
+</td>
+<td>
+Auriga
+(near HIP 27088)
+</td>
+</tr>
+</table>
+</div><!-- /overflow -->
+
+<h4>
+Definition</h4>
+<p>
+The first Galactic coordinate system was used by William Herschel in 1785. A number of different coordinate systems, each differing by a few degrees, were used until 1932, when Lund Observatory assembled a set of conversion tables that defined a standard Galactic coordinate system based on a North pole at RA 12h40m, Dec +28° (in the 1900.0 epoch convention) and a 0° longitude at the point where the Galactic plane and the Celestial plane intersected.
+</p>
+<p>
+In 1958 the International Astronomical Union (IAU) defined the galactic coordinate system in reference to radio observations of galactic neutral hydrogen through the hydrogen line, changing the definition of the Galactic longitude by 32° and the latitude by 1.5°.[1] In the equatorial coordinate system, for equinox and equator of 1950.0, the north galactic pole is defined at right ascension 12h 49m, declination +27.4°, in the constellation Coma Berenices, with a probable error of ±0.1°.[2] Longitude 0° is the great semicircle that originates from this point along the line in position angle 123° with respect to the equatorial pole. The galactic longitude increases in the same direction as right ascension. Galactic latitude is positive towards the north galactic pole, with a plane passing through the Sun and parallel to the galactic equator being 0°, whilst the poles are ±90°.[3] Based on this definition, the galactic poles and equator can be found from spherical trigonometry and can be precessed to other epochs; see the table.
+</p>
+<p>
+The IAU recommended that during the transition period from the old, pre-1958 system to the new, the old longitude and latitude should be designated lI and bI while the new should be designated lII and bII. This convention is occasionally seen.
+</p>
+<p>
+Radio source Sagittarius A*, which is the best physical marker of the true galactic center, is located at 17h 45m 40.0409s, −29° 00' 28.118" (J2000). Rounded to the same number of digits as the table, 17h 45.7m, −29.01° (J2000), there is an offset of about 0.07° from the defined coordinate center, well within the 1958 error estimate of ±0.1°. Due to the Sun's position, which currently lies ~56·75 ± 6·20 light years north of the midplane, and the heliocentric definition adopted by the IAU, the galactic coordinates of Sgr A* are latitude 0° 07' 12" south, longitude 0° 04' 06". Since as defined the galactic coordinate system does not rotate with time, Sgr A* is actually decreasing in longitude at the rate of galactic rotation at the sun, Ω, approximately 5.7 milliarcseconds per year (see Oort constants).
+</p>
+</div>
+</div><!-- /ui-body -->
+</div><!-- /content -->
+<div data-role="footer" data-theme="e"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<!--li> <a href="#" data-icon="arrow-l" data-iconpos="left" rel="external"> </a> </li-->
+	<li>	<h4> إعداد قتيبة أقرع</h4></li>
+<li><a href="index.html" data-icon="arrow-r" data-iconpos="right" rel="external">الرئيسية</a></li>
+</ul>
+</div><!--/navbar-->
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

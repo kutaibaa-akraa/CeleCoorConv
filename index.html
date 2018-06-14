@@ -1,0 +1,1041 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- عنوان الصفحة -->
+<title>التحويل بين الإحداثيات السماوية
+               </title> 
+
+	<link rel="stylesheet" href="./css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="./css/theme.css" />
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.mobile-1.3.1.min.js"></script>
+.
+ <SCRIPT LANGUAGE="JavaScript" SRC="cnst.js"></SCRIPT>
+   <script LANGUAGE="JavaScript" SRC="c_prec4.js"></script> 
+</head> 	
+
+<BODY>
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="e">
+
+<div data-role="panel" id="Menu" data-theme="e">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+            <li data-role="list-divider">تحديد نوع الإحداثيات</li>
+            <li><a rel="external" href="#equa">إحداثيات استوائية</a></li>
+            <li><a rel="external" href="#eclip">إحداثيات بروجية</a></li>
+            <li><a rel="external" href="#galac">إحداثيات مجرية</a></li>
+            <li><a rel="external" href="#notes">ملاحظات هامة</a></li>
+        </ul>
+</div><!-- popup panel -->
+
+	<div data-role="header" data-position="fixed" data-theme="e">
+		<!--h5> محول الإحداثيات السماوية</h5--> 
+ <a href="#two" data-icon="refresh" rel="external">English</a>
+<a href="coordinates_new.html#Menu" data-rel="popup" data-transition="slideup" data-icon="bars"> نوع احداثيات</a>
+
+ 	</div><!-- /header -->
+ 	 	<hr /><hr /><hr />
+ 	<div data-role="content" id="twocent"  data-theme="e">
+  <div class="ui-bar ui-bar-e">
+		<h2> محول الإحداثيات السماوية</h2> 
+  </div>
+<form>
+
+<!-- بداية قسم اختيار الحقبة -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3>اختيار الحقبة</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+    
+    <fieldset class="ui-grid-a"> 
+
+<div class="ui-block-a">
+    <!--الأولى-->
+	<h4>الحقبة الأولى</h4> 
+<input type="text" style="font-size: 0.8em;" NAME="inputbox23" value="1950">	   
+</div>
+<div class="ui-block-b">
+      <!--الأخيرة-->
+   
+   <h4>الحقبة الأخيرة</h4>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox24" value="2000">	
+</div>
+</fieldset>
+  </div></div>
+<!-- نهاية قسم اختيار الحقبة -->
+<HR WIDTH="95%">	
+	
+<HR WIDTH="95%">	
+<!-- بدء قسم الاحداثيات الاستوائية -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h2 id="equa">الإحداثيات الاستوائية</h2>
+  </div>
+  <div class="ui-body ui-body-e" >
+
+    <fieldset class="ui-grid-a"> 
+<div class="ui-block-a">
+    <!--الأولى-->
+	<!--h4>الحقبة الأولى</h4--> 
+
+<!--div class="ui-block-a">
+<h4>&alpha;<sub>1</sub></h4>
+</div>
+   	 <div class="ui-block-b">
+     <h4>&delta;<sub>1</sub></h4>
+ </div-->    
+
+<TABLE BORDER>
+
+<CAPTION><B><FONT COLOR="#000099">الإحداثيات الاستوائية للحقبة الأولى</FONT></B></CAPTION>
+
+<TR>
+<TD>
+	<h4><B><FONT COLOR="#000099"><FONT SIZE=+1>&alpha;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	</h4>
+</TD>
+
+<TD>
+<input type="checkbox" id="inpubox4" name="inputbox4">
+<h4>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&delta;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	</h4>
+</TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<b>h</b>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox1" value="0">
+<FONT COLOR="#000099">
+<B>m</B>	
+<input type="text" style="font-size: 0.8em;" NAME="inputbox2" value="0">
+<B>s</B>	
+<input type="text" style="font-size: 0.8em;" NAME="inputbox3" value="0">
+</FONT>	</TD>
+
+<TD style="background-color: gray;">
+<b>&deg;درجة</b>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox5" value="0"><FONT COLOR="#000099">
+<b>' دقيقة</b>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox6" value="0">
+<B>" ثانية</B>
+	<input type="text" style="font-size: 0.8em;" NAME="inputbox7" value="0"></FONT>	</TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox8" value="0">
+	</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<input type="text" style="font-size: 0.8em;" NAME=inputbox9 value="0"> </TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;"><B><FONT COLOR="#000099">راديان</FONT></B><input type="text" style="font-size: 0.8em;" NAME="inputbox10" value="0">	</TD>
+
+<TD style="background-color: gray;"><B><FONT COLOR="#000099">راديان</FONT></B><input type="text" style="font-size: 0.8em;" NAME="inputbox11" value="0">
+	</TD>
+</TR>
+<!--<tr><td colspan="2">
+<form>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <h5>بإشارة موجبة/سالبة
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&delta;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	</h5>
+        <input type="radio" name="radio-choice-h-2" id="inputbox4" value="off" >
+        <label for="inputbox4">-</label>
+        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" checked="checked" value="on">
+        <label for="radio-choice-h-2b">+</label>    
+    </fieldset>
+</form>
+</td></tr>  -->
+</TABLE>	
+
+</div>
+<div class="ui-block-b">
+      <!--الأخيرة-->
+   
+   <!--h4>الحقبة الأخيرة</h4-->
+
+   	   <!--div class="ui-block-a">
+<h4>&alpha;<sub>2</sub></h4>
+</div>
+   	 <div class="ui-block-b">
+     <h4>&delta;<sub>2</sub></h4>
+ </div-->   
+
+	<TABLE BORDER >
+<CAPTION><B><FONT COLOR="#000099">الإحداثيات الاستوائية للحقبة الأخيرة</FONT></B></CAPTION>
+
+<TR>
+<TD>
+			
+	<h4><B><FONT COLOR="#000099"><FONT SIZE=+1>&alpha;</FONT><SUB><FONT SIZE="-1">2</FONT></SUB></FONT></FONT></B></h4>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&delta;</FONT><SUB><FONT SIZE=-1>2</FONT></SUB></FONT></B>	
+</TD>
+</TR>
+
+<TR>
+<TD>
+<b>h</b>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox12"><FONT COLOR="#000099">
+<B>m</B>	<input type="text" style="font-size: 0.8em;"   NAME=inputbox13>
+<B>s</B>	
+<input type="text" style="font-size: 0.8em;" NAME="inputbox14">
+</FONT>	</TD>
+
+<TD>
+<b>&deg;درجة</b>
+<input type="text" style="font-size: 0.8em;" NAME="inputbox16">
+<FONT COLOR="#000099">
+<b>' دقيقة</b>	
+<input type="text" style="font-size: 0.8em;" NAME="inputbox17">
+<B>" ثانية</B>	
+<input type="text" style="font-size: 0.8em;" NAME="inputbox18" >
+</FONT>	</TD>
+</TR>
+
+<TR>
+<TD><B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<input type="text" style="font-size: 0.8em;"  NAME="inputbox19">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<input type="text" style="font-size: 0.8em;"  NAME="inputbox20">
+	</TD>
+</TR>
+
+<TR>
+<TD>
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<input type="text" style="font-size: 0.8em;"  NAME="inputbox21">
+	</TD>
+
+<TD>
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<input type="text" style="font-size: 0.8em;"  NAME="inputbox22">
+	</TD>
+</TR>
+</TABLE>	
+
+</div>
+
+</fieldset>
+
+<INPUT type="button" NAME="mat" VALUE="قبول الإحداثيات الاستوائية" onclick="getequ(this.form)">
+<INPUT type="reset" id="reset" value="مسح">
+
+</div></div>
+<!-- /نهاية قسم الاحداثيات الاستوائية -->
+<HR WIDTH="95%">	
+	
+<HR WIDTH="95%">	
+<!-- بداية قسم الاحداثيات البروجية -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3 id="eclip">الإحداثيات البروجية</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+
+    <fieldset class="ui-grid"> 
+<div class="ui-block-solo">
+    <!--الأولى-->
+	<!--h4>الحقبة الأولى</h4--> 
+
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">الإحداثيات البروجية للحقبة الأولى</FONT></B></CAPTION>
+<TR>
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&lambda;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&beta;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	
+</TD>
+
+<TD rawspan="2">	<B><FONT COLOR="#000099">Equ/Ecl</FONT></B>	</TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME="inputbox25" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME=inputbox26 value="0">
+</TD>
+<td>ميل دائرة البروج على دائرة الاستواء</td>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<INPUT type="text" NAME="inputbox27" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<INPUT type="text" NAME="inputbox28" value="0">
+</TD>
+
+
+<TD>
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME="inputbox29"> 
+</TD>
+</TR>
+</TABLE>	
+</div>
+<div></div>
+<div class="ui-block-solo">
+      <!--الأخيرة-->
+   
+   <!--h4>الحقبة الأخيرة</h4-->
+
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">الإحداثيات البروجية للحقبة الأخيرة</FONT></B></CAPTION>
+
+<TR>
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&lambda;</FONT><SUB><FONT SIZE=-1>2</FONT></SUB></FONT></B>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&beta;</FONT><SUB><FONT SIZE=-1>2</FONT></SUB></FONT></B>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099">Equ/Ecl</FONT></B>	
+</TD>
+</TR>
+
+<TR>
+<TD>
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME="inputbox30">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME="inputbox31">
+</TD>
+
+<TD>ميل دائرة البروج على دائرة الاستواء</TD>
+</TR>
+
+<TR>
+<TD>
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<INPUT type="text" NAME="inputbox32">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<INPUT type="text" NAME="inputbox33">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text"  NAME="inputbox34">
+</TD>
+</TR>
+</TABLE>	
+</div>
+</fieldset>
+<INPUT type="button" NAME="mat" VALUE="قبول الإحداثيات البروجية" onclick="getecl(this.form)">
+	<INPUT type="reset" value="مسح">
+
+</div></div>
+<!-- نهاية قسم الاحداثيات البروجية -->
+<HR WIDTH="95%">	
+	
+<HR WIDTH="95%">	
+<!-- بدء قسم الاحداثيات المجرية -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3 id="galac">الإحداثيات المجرية</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+<!--form>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <h5>بإشارة موجبة/سالبة
+	<B><FONT COLOR="#000099">b</FONT></B>	</h5>
+        <input type="radio" name="inputbox36a" id="inputbox36a" value="off" >
+        <label for="inputbox36a">-</label>
+        <input type="radio" name="radio-choice-h-1" id="radio-choice" checked="checked" value="on">
+        <label for="radio-choice">+</label>    
+    </fieldset>
+</form-->
+    <fieldset class="ui-grid"> 
+<div class="ui-block-solo">
+
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">الطول المجري</FONT></B></CAPTION>
+<TR>
+<TD>
+<h4><B><FONT COLOR="#000099">l</FONT></B></h4>
+</TD>
+<TD style="background-color: gray;">
+        
+<FONT COLOR="#000099">
+ <b>&deg;درجة</b>	
+<INPUT type="text" NAME="inputbox35a" value="0">
+</td>
+<TD style="background-color: gray;">
+<b>' دقيقة</b>
+<INPUT type="text"   NAME="inputbox35b" value="0">
+</td>
+<TD style="background-color: gray;">
+<B>" ثانية</B>
+<INPUT type="text" NAME="inputbox35c" value="0">
+</FONT>
+       
+</TD>
+</tr>
+<tr>
+<TD style="background-color: gray;">
+ <B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME="inputbox35" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<INPUT type="text" NAME="inputbox37" value="0">
+</TD>
+<td colspan="2">
+
+</td>
+</TR>
+</TABLE>	
+</div>
+<div class="ui-block-solo">
+    
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">العرض المجري</FONT></B></CAPTION>
+
+<TR>
+
+<TD>
+
+<input type="checkbox" name="inputbox36a" value="negative value">
+<h4><B><FONT COLOR="#000099">b</FONT></B></h4>
+</TD>
+
+<TD style="background-color: gray;"> 
+
+<FONT COLOR="#000099">
+<b>&deg;درجة</b>
+<INPUT type="text" NAME="inputbox36b" value="0">
+</td>
+<TD style="background-color: gray;">
+<b>' دقيقة</b>
+<INPUT type="text" NAME="inputbox36c" value="0">
+</td>
+<TD style="background-color: gray;">
+<b>" ثانية</b>
+<INPUT type="text" NAME="inputbox36d" value="0"></FONT>
+</TD>
+</tr>
+<tr>
+
+<TD style="background-color: gray;">
+
+<B><FONT COLOR="#000099">&deg;درجة</FONT></B>
+<INPUT type="text" NAME="inputbox36" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">راديان</FONT></B>
+<INPUT type="text" NAME="inputbox38" value="0">
+</TD>
+<td colspan="2">
+ من اجل قيمة سالبة قم بتأشير المربع الصغير
+</td>
+</TR>
+</TABLE>	
+</div>
+</fieldset>
+
+
+<INPUT type="button" NAME="mat" VALUE="قبول الإحداثيات المجرية" onclick="getgal(this.form)">
+
+<INPUT type="reset" value="مسح">	
+</div></div>
+<!-- نهاية قسم الاحداثيات المجرية -->
+			
+<HR WIDTH="95%">	
+	
+<HR WIDTH="95%">	
+	 <!-- بدء قسم  الكوكبة -->
+
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3> تحديد الكوكبة التي تقع فيها الإحداثيات المدخلة</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+	<div id="ltrdir"><INPUT type="text"  NAME="outbox1"></div>
+</div></div>
+</form>
+
+	
+<HR WIDTH="95%">	
+<div data-role="content" id="one">
+<h3>ملاحظات الاستخدام</h3>
+<p id="notes"><b>إدخال البينات يتم في الخلايا ذات اللون الفضي من الجدول و هي تحوي بيانات مدخلة مسبقاً بالإضافة إلى إمكانية تغيير الحقبة بالشكل المطلوب !</b></p>
+<p>في كل مرة تريد فيها تغيير القيم المدخلة , عليك أن تضغط زر " مسح " و من ثم متابعة العمل و إدخال بيانات جديدة و الضغط على زر القبول المناسب .</p>
+
+<p> إن أردت تغيير حقبة البداية و النهاية فيمكنك ذلك و لكن فقط المجال ما بين (العام 1000 و حتى العام 3000), 
+قم بإدخال الإحداثيات المناسبة في الحقل المناسب و بالنسبة للإحداثيات الاستوائية استخدم الإحداثيين : 
+<br /><span id="two">  
+&alpha;<SUB><FONT SIZE=-1>1</FONT></SUB>,
+&delta;<SUB><FONT SIZE=-1>1</FONT></SUB> - </span><b> حقل الحقبة الأولى</b><br />
+ و كذلك الأمر بالنسبة للإحداثيات البروجية استخدم الإحداثيين :
+<br /><span id="two">
+ &lambda;<SUB><FONT SIZE=-1>1</FONT></SUB>,
+&beta;<SUB><FONT SIZE=-1>1</FONT></SUB> - </span><b> حقل الحقبة الأولى</b> <br />
+أما الإحداثيات المجرية فاستخدم الإحداثيين 
+( l,b) <br />
+  و عند الانتهاء من هذه الإدخالات اضغط على زر القبول المناسب 
+</p>
+<p>عند إدخال قيمة العام نفسها في كلا الحقبتين الأولى  و الأخيرة, سيتم و بشكل تلقائي تغيير قيمة الحقبة  
+الأخيرة بزيادة 10 عشرة أعوام عن الحقبة الأولى.
+</p>
+
+<p><b>إشارة السالب "-" </b>يمكن إدخالها لقيم كل من  &delta; و b أثناء إدخال البيانات في حقل الدرجات أو الدقائق و الثواني <SUP>o</SUP> ' "
+و ذلك في الخانات الأولى من جداول الإحداثيات الاستوائية و المجرية
+عن طريق<b> تأشير المربعات الصغيرة </b>بجانب رموز هذه الإحداثيات. كما يمكن إدخال رمز السالب في داخل خانة الدرجات مباشرة, باستثناء الحالة التي يكون فيها قيمة الدرجات بين المجال
+<span dir="ltr"> -1<sup>o</sup> &lt; &delta;
+ (b) &lt; 0<sup>o</sup></span> فإن قيمة الخانة مساوية للصفر  "0"  و سيتم فقدان هذه الإشارة.
+</p>
+<P>الحسابات التابعة للإحداثيات البروجية تمت على أساس استخدام قيمة الميل الحالي لدائرة البروج على دائرة الاستواء   ("Equ/Ecl", مقدراً بالدرجات) مع الأخذ بعين الاعتبار ترنح محور الأرض.
+</p>
+<P> تم استخدام القيم الافتراضية الأولية التالية  لنظام الإحداثيات المجرية :
+<ul>
+<li>
+الإحداثيات الاستوائية عام
+ (1950.0) للقطب المجري الشمالي هي :
+<ul>
+<li>
+&alpha;<SUB><FONT SIZE=-1>N</FONT></SUB> = 192<SUP>o</SUP>.25</li>
+<li>&delta;<SUB><FONT SIZE=-1>N</FONT></SUB> = 27<SUP>o</SUP>.4</li></ul>
+<li>الطول المجري للعقدة الصاعدة على دائرة الاستواء السماوي هي 
+ l<SUB><FONT SIZE=-1>0</FONT></SUB> = 33<SUP>o</SUP>.0. 
+</li>
+</ul>
+<HR WIDTH="50%">
+</div><!-- /content id one -->
+ تم اقتطاع الصفحة و الكودات من موقع المرصد الروسي   <br /> HEAD IKI
+<BR><B><FONT SIZE=-2><A HREF="MAILTO:nick@hea.iki.rssi.ru">Webmaster</A>	</FONT></B>
+<BR><B><FONT SIZE=-2>(C) Copyright 2001</FONT></B>
+<BR><B><FONT SIZE=-2><A HREF="http://hea.iki.rssi.ru/">HEAD IKI</A></FONT></B>
+
+</div><!-- /content -->
+
+<div data-role="footer" data-theme="e" data-position="fixed">
+	<div data-role="navbar">
+		
+		<ul>
+	<li> <a href=" about.html" data-icon="arrow-l" data-iconpos="left" rel="external">حول</a></li>
+
+	 <li><h4>إعداد قتيبة أقرع</h4></li>
+			
+	<li><a href=" glossary.html" data-icon="arrow-r" data-iconpos="right" rel="external">مصطلحات</a></li>
+
+		</ul>	
+</div><!--navbar-->
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="e">
+
+	<div data-role="header" data-position="fixed" data-theme="e">
+	<!--h2>UNIVERSAL COORDINATES CONVERTER</h2-->  <a  href="#one" data-icon="refresh" rel="external">arabic</a>
+<a href="#conspanel" data-icon="bars" rel="external">Index</a>
+
+ 	</div><!-- /header -->
+ 	<hr />
+<hr />
+<hr />
+ 	<div data-role="content" id="twocent" data-theme="b">
+<form>
+  <div class="ui-bar ui-bar-e">
+	<h2>UNIVERSAL COORDINATES CONVERTER</h2> 
+</div>
+<!-- بداية قسم اختيار الحقبة -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3>Epoch</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+    
+    <fieldset class="ui-grid-a"> 
+
+<div class="ui-block-a">
+    <!--الأولى-->
+	<h4>First Epoch</h4> 
+<INPUT type="text" NAME="inputbox23" value="1950">	   
+</div>
+<div class="ui-block-b">
+      <!--الأخيرة-->
+   
+   <h4>Final Epoch</h4>
+<INPUT type="text" NAME="inputbox24" value="2000">	
+</div>
+</fieldset>
+  </div></div>
+<!-- نهاية قسم اختيار الحقبة -->
+
+<!-- بدء قسم الاحداثيات الاستوائية -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h2>Equatorial Coordinates</h2>
+  </div>
+  <div class="ui-body ui-body-e" >
+
+    <fieldset class="ui-grid-a"> 
+<div class="ui-block-a">
+    <!--الأولى-->
+	<!--h4>الحقبة الأولى</h4--> 
+
+<!--div class="ui-block-a">
+<h4>&alpha;<sub>1</sub></h4>
+</div>
+   	 <div class="ui-block-b">
+     <h4>&delta;<sub>1</sub></h4>
+ </div-->    
+
+
+<TABLE BORDER>
+
+<CAPTION><B><FONT COLOR="#000099">Equatorial coordinates for the First Epoch</FONT></B></CAPTION>
+
+<TR>
+<TD>
+		<h4><B><FONT COLOR="#000099"><FONT SIZE=+1>&alpha;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>		</h4>
+</TD>
+
+<TD>
+<INPUT TYPE="checkbox" NAME="inputbox4" id="inputbox4">
+	<h4><B><FONT COLOR="#000099"><FONT SIZE=+1>&delta;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	</h4>
+</TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<b>h</b>
+<INPUT type="text" NAME="inputbox1" value="0">
+<FONT COLOR="#000099">
+<B>m</B>	
+<INPUT type="text" NAME="inputbox2" value="0">
+<B>s</B>	
+<INPUT type="text" NAME="inputbox3" value="0">
+</FONT>	</TD>
+
+<TD style="background-color: gray;">
+<b>&deg;</b>
+<INPUT type="text" NAME="inputbox5" value="0"><FONT COLOR="#000099">
+<b>'</b>
+<INPUT type="text" NAME="inputbox6" value="0">
+<B>"</B>
+	<INPUT type="text" NAME="inputbox7" value="0"></FONT>	</TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox8" value="0">
+	</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME=inputbox9 value="0"> </TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;"><B><FONT COLOR="#000099">rad</FONT></B><INPUT type="text" NAME="inputbox10" value="0">	</TD>
+
+<TD style="background-color: gray;"><B><FONT COLOR="#000099">rad</FONT></B><INPUT type="text" NAME="inputbox11" value="0">
+	</TD>
+</TR>
+</TABLE>	
+
+</div>
+<div class="ui-block-b">
+      <!--الأخيرة-->
+   
+   <!--h4>Final Epoch</h4-->
+
+   	   <!--div class="ui-block-a">
+<h4>&alpha;<sub>2</sub></h4>
+</div>
+   	 <div class="ui-block-b">
+     <h4>&delta;<sub>2</sub></h4>
+ </div-->   
+
+	<TABLE BORDER >
+<CAPTION><B><FONT COLOR="#000099">Equatorial coordinates for the Final Epoch</FONT></B></CAPTION>
+
+<TR>
+<TD>
+	<h4><B><FONT COLOR="#000099"><FONT SIZE=+1>&alpha;</FONT><SUB><FONT SIZE="-1">2</FONT></SUB></FONT></FONT></B>	 	</h4>
+</TD>
+
+<TD>
+		<h4><B><FONT COLOR="#000099"><FONT SIZE=+1>&delta;</FONT><SUB><FONT SIZE=-1>2</FONT></SUB></FONT></B>		</h4>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<b>h</b>
+<INPUT type="text" NAME="inputbox12"><FONT COLOR="#000099">
+<B>m</B>	<INPUT type="text"   NAME=inputbox13>
+<B>s</B>	
+<INPUT type="text" NAME="inputbox14">
+</FONT>	</TD>
+
+<TD>
+<b>&deg;</b>
+<INPUT type="text" NAME="inputbox16">
+<FONT COLOR="#000099">
+<b>'</b>	
+<INPUT type="text" NAME="inputbox17">
+<B>"</B>	
+<INPUT type="text" NAME="inputbox18" >
+</FONT>	</TD>
+</TR>
+
+<TR>
+<TD><B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text"  NAME="inputbox19">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text"  NAME="inputbox20">
+	</TD>
+</TR>
+
+<TR>
+<TD>
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text"  NAME="inputbox21">
+	</TD>
+
+<TD>
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text"  NAME="inputbox22">
+	</TD>
+</TR>
+</TABLE>	
+
+</div>
+
+</fieldset>
+
+<INPUT type="button" NAME="mat" VALUE="Accept Equatorial Coordinates" onclick="getequ(this.form)">
+<INPUT type="reset" value="clear">
+
+</div></div>
+<!-- /نهاية قسم الاحداثيات الاستوائية -->
+
+<!-- بداية قسم الاحداثيات البروجية -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3>Ecliptic Coordinates</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+
+    <fieldset class="ui-grid"> 
+<div class="ui-block-solo">
+    <!--الأولى-->
+	<!--h4>الحقبة الأولى</h4--> 
+
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">Ecliptic coordinates for the First Epoch</FONT></B></CAPTION>
+<TR>
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&lambda;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&beta;</FONT><SUB><FONT SIZE=-1>1</FONT></SUB></FONT></B>	
+</TD>
+
+<TD rawspan="2">	<B><FONT COLOR="#000099">Equ/Ecl</FONT></B>	</TD>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox25" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME=inputbox26 value="0">
+</TD>
+<td>Inclination angel between Equator/Ecliptic circles</td>
+</TR>
+
+<TR>
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text" NAME="inputbox27" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text" NAME="inputbox28" value="0">
+</TD>
+
+
+<TD>
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox29"> 
+</TD>
+</TR>
+</TABLE>	
+</div>
+<div></div>
+<div class="ui-block-solo">
+      <!--الأخيرة-->
+   
+   <!--h4>الحقبة الأخيرة</h4-->
+
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">Ecliptic coordinates for the Final Epoch</FONT></B></CAPTION>
+
+<TR>
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&lambda;</FONT><SUB><FONT SIZE=-1>2</FONT></SUB></FONT></B>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099"><FONT SIZE=+1>&beta;</FONT><SUB><FONT SIZE=-1>2</FONT></SUB></FONT></B>	
+</TD>
+
+<TD>
+	<B><FONT COLOR="#000099">Equ/Ecl</FONT></B>	
+</TD>
+</TR>
+
+<TR>
+<TD>
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox30">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox31">
+</TD>
+<td>Inclination angel between Equator/Ecliptic circles</TD>
+</TR>
+
+<TR>
+<TD>
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text" NAME="inputbox32">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text" NAME="inputbox33">
+</TD>
+
+<TD>
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text"  NAME="inputbox34">
+</TD>
+</TR>
+</TABLE>	
+</div>
+</fieldset>
+<INPUT type="button" NAME="mat" VALUE="Accept Ecliptic Coordinates" onclick="getecl(this.form)">
+	<INPUT type="reset" value="clear">
+
+</div></div>
+<!-- نهاية قسم الاحداثيات البروجية -->
+
+<!-- بدء قسم الاحداثيات المجرية -->
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3>Galactic Coordinates</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+
+    <fieldset class="ui-grid"> 
+<div class="ui-block-solo">
+    <!--الأولى-->
+	<!--h4>الحقبة الأولى</h4--> 
+
+
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">Galactic Longitude</FONT></B></CAPTION>
+<TR>
+<TD>
+	<B><FONT COLOR="#000099">l</FONT></B>	
+</TD>
+<TD style="background-color: gray;">
+        
+<FONT COLOR="#000099">
+ <b>&deg;</b>	
+<INPUT type="text" NAME="inputbox35a" value="0">
+</td>
+<TD style="background-color: gray;">
+<b>'</b>
+<INPUT type="text"   NAME="inputbox35b" value="0">
+</td>
+<TD style="background-color: gray;">
+<B>"</B>
+<INPUT type="text" NAME="inputbox35c" value="0">
+</FONT>
+       
+</TD>
+</tr>
+<tr>
+<TD style="background-color: gray;">
+ <B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox35" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text" NAME="inputbox37" value="0">
+</TD>
+<td></td><td></td>
+</TR>
+</TABLE>	
+</div>
+
+<div class="ui-block-solo">
+      <!--الأخيرة-->
+   
+   <!--h4>الحقبة الأخيرة</h4-->
+	<TABLE BORDER CELLSPACING=0 >
+<CAPTION><B><FONT COLOR="#000099">Galactic Latitude</FONT></B></CAPTION>
+
+<TR>
+
+<TD>
+<INPUT TYPE="checkbox" NAME="inputbox36a">
+	<h4><B><FONT COLOR="#000099">b</FONT></B>	</h4>
+</TD>
+
+<TD style="background-color: gray;"> <FONT COLOR="#000099">
+<b>&deg;</b>
+<INPUT type="text" NAME="inputbox36b" value="0">
+</td>
+<TD style="background-color: gray;">
+<b>'</b>
+<INPUT type="text" NAME="inputbox36c" value="0">
+</td>
+<TD style="background-color: gray;">
+<b>"</b>
+<INPUT type="text" NAME="inputbox36d" value="0"></FONT>
+</TD>
+</tr>
+<tr>
+
+<TD style="background-color: gray;">
+
+<B><FONT COLOR="#000099">&deg;</FONT></B>
+<INPUT type="text" NAME="inputbox36" value="0">
+</TD>
+
+<TD style="background-color: gray;">
+<B><FONT COLOR="#000099">rad</FONT></B>
+<INPUT type="text" NAME="inputbox38" value="0">
+</TD>
+<td></td><td></td>
+</TR>
+</TABLE>	
+</div>
+</fieldset>
+
+<INPUT type="button" NAME="mat" VALUE="Accept Galactic Coordinates" onclick="getgal(this.form)">
+
+<INPUT type="reset" value="clear">	
+</div></div>
+<!-- نهاية قسم الاحداثيات المجرية -->
+
+<HR WIDTH="95%">	
+	
+<HR WIDTH="95%">	
+	 <!-- بدء قسم  الكوكبة -->
+
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-e">
+    <h3>Constellation corresponding to coordinates entered</h3>
+  </div>
+  <div class="ui-body ui-body-e" >
+	<div id="ltrdir"><INPUT type="text"  NAME="outbox1"></div>
+</div></div>
+</form>
+
+	
+<HR WIDTH="95%">	
+<div data-role="content" id="ltrtwo">
+<h3>Usage notes</h3>
+
+<p><b>One can only type in those fields that have some values already entered!(gray backgrouded cells)</b>
+<p>Change (if necessary) start and final epochs (from year 1000 to 3000), enter
+coordinates into appropriate fields (equatorial
+&alpha;<SUB><FONT SIZE=-1>1</FONT></SUB>,
+&delta;<SUB><FONT SIZE=-1>1</FONT></SUB> - <b>for the start
+epoch only</b>, ecliptical &lambda;<SUB><FONT SIZE=-1>1</FONT></SUB>,
+&beta;<SUB><FONT SIZE=-1>1</FONT></SUB> - <b>for the start
+epoch only</b> or galactical l,b) and hit corresponding "ACCEPT" button. If the
+epochs are equal to each other, the final epoch is automatically set to the value
+of start epoch plus 10 years. Before the next calculation press any "CLEAR" button.
+
+<p><b>"-" sign</b> for &delta; and b in <SUP>o</SUP> ' "
+form (first input lines for equatorial and galactical coordinates) should be
+marked in a <b>mini rectangular checkbox </b> before &delta; and (b) window. The sign can also be
+entered in the <sup>o</sup> field itself but in case of -1<sup>o</sup> &lt; &delta;
+ (b) &lt; 0<sup>o</sup> the value in this field equals to "0" and sign will
+be lost.
+<P>Calculation of ecliptical coordinates is based on 49 current ecliptics
+inclination angle to equator ("Equ/Ecl", in degrees) with nutation taken into
+account.
+<P>The following initial parameters for galactical system of coordinates are used:
+Equatorial coordinates (1950.0) of nothern galactical pole
+&alpha;<SUB><FONT SIZE=-1>N</FONT></SUB> = 192<SUP>o</SUP>.25,
+&delta;<SUB><FONT SIZE=-1>N</FONT></SUB> = 27<SUP>o</SUP>.4,
+galactical longitude of ascending node on equator l<SUB><FONT SIZE=-1>0</FONT></SUB> = 33<SUP>o</SUP>.0. 
+<HR WIDTH="50%">
+<BR><B><FONT SIZE=-2><A HREF="MAILTO:nick@hea.iki.rssi.ru">Webmaster</A>	</FONT></B>
+<BR><B><FONT SIZE=-2>(C) Copyright 2001</FONT></B>
+<BR><B><FONT SIZE=-2><A HREF="http://hea.iki.rssi.ru/">HEAD IKI</A></FONT></B>
+</div><!-- /content ltrtwo -->
+</div><!-- /content -->
+
+<div data-role="footer" data-theme="e" data-position="fixed">
+	<div data-role="navbar">
+		
+		<ul>
+	<li> <a href="about.html#two" data-icon="arrow-l" data-iconpos="left" rel="external">about</a></li>
+
+	 <li><h4>prep: kutaibaa akraa</h4></li>
+			
+	<li><a href="glossary.html#two" data-icon="arrow-r" data-iconpos="right" rel="external">glossary</a></li>
+
+		</ul>	
+</div><!--navbar-->
+	<!--/div><!-- /footer -->
+</div><!-- /page two --> 
+</body>
+</html>
